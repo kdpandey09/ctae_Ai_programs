@@ -30,7 +30,7 @@ def check_rows(board):
     global winner
     if board[0] == board[1] == board[2] and board[0] != "-":
         winner = board[0]
-        
+        return True
     elif board[3] == board[4] == board[5] and board[3] != "-":
         winner = board[3]
         return True
